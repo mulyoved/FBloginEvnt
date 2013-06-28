@@ -22,12 +22,20 @@ angular.module('yo6App')
 
 				FB.init({
 					appId: $rootScope.config.facebookAppId,
+					nativeInterface: CDV.FB,
+					useCachedDialogs: false
+				}, true);
+
+				/*
+				FB.init({
+					appId: $rootScope.config.facebookAppId,
 					status: true,
 					//cookie: true,
 					//xfbml: true,
 					useCachedDialogs: false
 				});
-
+				*/
+				
 				console.log('window.fbAsyncInit a1');
 				FB.Event.subscribe('auth.statusChange', function (response) {
 					console.log('window.fbAsyncInit d1 ' + response.status);
