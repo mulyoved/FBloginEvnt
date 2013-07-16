@@ -16,7 +16,7 @@
         Final
     </author>
 
-    <gap:plugin name="FacebookConnect">
+    <gap:plugin name="com.phonegap.plugins.facebook">
         <param name="APP_ID" value="193911810758167" />
         <param name="APP_NAME" value="Test001" />
     </gap:plugin>    
